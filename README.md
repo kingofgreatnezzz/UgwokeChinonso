@@ -12,8 +12,8 @@ A full-featured artist portfolio and e-commerce platform built with **Next.js 16
 | Route | Description |
 |-------|-------------|
 | `/` | Homepage with hero, featured carousel, latest works, artist bio |
-| `/gallery` | Full gallery with search, filters (type/topic/price), sorting, pagination |
-| `/shop` | Same as gallery — browse and shop artworks |
+| `/gallery` → redirects to `/shop` | Browse and shop artworks (same as shop) |
+| `/shop` | Full gallery with search, filters, sorting, pagination |
 | `/artwork/[slug]` | Artwork detail page with images, reviews, and add-to-cart |
 | `/collections/[slug]` | Browse artworks by collection |
 | `/about` | Artist bio and background |
@@ -177,7 +177,7 @@ Then access the admin dashboard at **http://localhost:3000/admin**
 The app works **even without a database** — every page has built-in mock data:
 
 - **Home page** (`/`) — all sections use mock artworks, testimonials, and content
-- **Gallery/Shop** (`/gallery`, `/shop`) — 24 mock artworks with full filter/search/sort
+- **Gallery/Shop** (`/shop`) — 24 mock artworks with full filter/search/sort
 - **Artwork detail** (`/artwork/mock-1`) — full detail page with images and reviews
 - **Collections** — sample collections with artworks
 - **About** — placeholder artist bio
@@ -208,8 +208,7 @@ frontend/
 │   │   ├── admin/             # Admin dashboard pages
 │   │   ├── auth/              # Login & register pages
 │   │   ├── dashboard/         # User dashboard pages
-│   │   ├── gallery/           # Gallery page
-│   │   ├── shop/              # Shop page
+│   │   ├── shop/              # Shop/gallery page
 │   │   ├── artwork/[slug]/    # Artwork detail page
 │   │   ├── collections/[slug]/# Collection page
 │   │   ├── cart/              # Shopping cart
@@ -289,3 +288,8 @@ A `Dockerfile` is included for containerized deployment.
 ## 📄 License
 
 MIT
+
+
+URL:    http://localhost:3000/auth/login                                                                         
+      Email:  admin@artistportfol.io                                                                                   
+      Pass:   Admin@123    

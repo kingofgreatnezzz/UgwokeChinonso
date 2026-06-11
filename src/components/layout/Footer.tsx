@@ -27,7 +27,6 @@ const socialLinks = [
 const quickLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About Me' },
-  { href: '/gallery', label: 'Gallery' },
   { href: '/shop', label: 'Shop Art' },
   { href: '/contact', label: 'Contact' },
   { href: '/faq', label: 'FAQ' },
