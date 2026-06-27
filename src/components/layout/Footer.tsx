@@ -272,6 +272,10 @@ function Footer() {
             <p className="text-xs text-stone-400">
               &copy; {new Date().getFullYear()} Atelier A. All rights reserved.
             </p>
+            <p className="text-xs text-stone-400 font-serif italic tracking-wide">
+              Developed by <span className="text-amber-700 font-semibold not-italic">King of Greatness</span> —{' '}
+              <span className="text-[10px]">TECH DIBIA</span>
+            </p>
 
             {/* Payment Methods */}
             <div className="flex items-center gap-3">
